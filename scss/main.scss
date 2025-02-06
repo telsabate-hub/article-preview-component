@@ -1,0 +1,39 @@
+@import './config';
+
+body {
+    @include fontStyle(.8125rem, 500);
+
+    background-color: $light-grayish-blue;
+    padding: 15.625rem 0;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    max-width: 44rem;
+    background: white;
+    margin: auto;
+}
+
+article > img {
+    width: 40%;
+}
+
+.article-details {
+    padding: 2rem 1.875rem;
+
+    &-title {
+        font-size: 1.5em;
+    }
+}
+
+.author img {
+    width: 2.375rem;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.content-preview {
+    padding: 10px 0 16px;
+    line-height: 1.5;
+}

@@ -1,0 +1,18 @@
+$very-dark-grayish-blue: hwb(217 28% 58%);
+$desaturated-dark-blue: hsl(214, 17%, 51%);
+$grayish-blue: hsl(212, 23%, 69%);
+$light-grayish-blue: hsl(210, 46%, 95%);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin fontStyle($size, $weight){
+    font-family: "Manrope", serif;
+    font-optical-sizing: auto;
+    font-weight: $weight;
+    color: $very-dark-grayish-blue;
+    font-size: $size;
+}

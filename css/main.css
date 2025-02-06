@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  color: hwb(217 28% 58%);
+  font-size: 0.8125rem;
+  background-color: hsl(210, 46%, 95%);
+  padding: 15.625rem 0;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  max-width: 44rem;
+  background: white;
+  margin: auto;
+}
+
+article > img {
+  width: 40%;
+}
+
+.article-details {
+  padding: 2rem 1.875rem;
+}
+.article-details-title {
+  font-size: 1.5em;
+}
+
+.author img {
+  width: 2.375rem;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.content-preview {
+  padding: 10px 0 16px;
+  line-height: 1.5;
+}
