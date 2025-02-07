@@ -17,7 +17,7 @@ body {
 article {
   display: flex;
   justify-content: center;
-  max-width: 44rem;
+  max-width: 46rem;
   background: white;
   margin: auto;
 }
@@ -27,10 +27,11 @@ article > img {
 }
 
 .article-details {
-  padding: 2rem 1.875rem;
+  padding: 2rem 2.1875rem;
 }
 .article-details-title {
-  font-size: 1.5em;
+  font-size: 1.6em;
+  line-height: 1.35;
 }
 
 .author img {
@@ -40,6 +41,19 @@ article > img {
 }
 
 .content-preview {
-  padding: 10px 0 16px;
-  line-height: 1.5;
+  padding: 13px 0 13px;
+  line-height: 1.55;
+  color: hsl(214, 17%, 51%);
+}
+
+.author {
+  display: flex;
+}
+
+.author-name {
+  font-weight: 700;
+}
+
+.article-date {
+  color: hsl(212, 23%, 69%);
 }
