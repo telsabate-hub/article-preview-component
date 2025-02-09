@@ -80,3 +80,29 @@ article {
   width: 1.875rem;
   height: 1.875rem;
 }
+
+#shareBtn:hover,
+#shareBtn:focus {
+  background-color: hsl(214, 17%, 51%);
+}
+
+#shareBtn:hover > img,
+#shareBtn:focus > img {
+  filter: brightness(0) invert(1);
+}
+
+.tooltip-content {
+  visibility: hidden;
+  width: 120px;
+  background-color: hwb(217 28% 58%);
+  color: hsl(212, 23%, 69%);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}

@@ -75,3 +75,30 @@ article {
     width: 1.875rem;
     height: 1.875rem;
 }
+
+#shareBtn:hover,
+#shareBtn:focus {
+    background-color: $desaturated-dark-blue;
+}
+
+#shareBtn:hover > img, 
+#shareBtn:focus > img {
+    filter: brightness(0) invert(1);
+}
+
+.tooltip-content {
+    visibility: hidden;
+    width: 120px;
+    background-color: $very-dark-grayish-blue;
+    color: $grayish-blue;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
