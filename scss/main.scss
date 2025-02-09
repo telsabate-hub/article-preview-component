@@ -13,41 +13,65 @@ article {
     max-width: 46rem;
     background: white;
     margin: auto;
+    border-radius: .5rem;
 }
 
-article > img {
-    width: 40%;
+.article-img {
+    background-image: url("../images/drawers.jpg");
+    width: 105%;
+    background-size: cover;
+    border-radius: 0.5rem 0 0 0.5rem;
 }
 
 .article-details {
     padding: 2rem 2.1875rem;
 
     &-title {
-        font-size: 1.6em;
+        font-size: 1.3125rem;
         line-height: 1.35;
     }
 }
 
-.author img {
+.author > img {
     width: 2.375rem;
     border-radius: 50%;
     vertical-align: middle;
 }
 
 .content-preview {
-    padding: 13px 0 13px;
+    padding: 12px 0;
     line-height: 1.55;
     color: $desaturated-dark-blue;
 }
 
 .author {
     display: flex;
+    padding-top: 8px;
+    position: relative;
+
+    &-details {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1.125rem;
+    }
 }
 
 .author-name {
     font-weight: 700;
+    padding-bottom: 2px;
 }
 
 .article-date {
     color: $grayish-blue;
+}
+
+#shareBtn {
+    border: none;
+    position: absolute;
+    top: .75rem;
+    right: 0;
+    border-radius: 50%;
+    background-color: $light-grayish-blue;
+    width: 1.875rem;
+    height: 1.875rem;
 }
