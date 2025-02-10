@@ -88,17 +88,45 @@ article {
 
 .tooltip-content {
     visibility: hidden;
-    width: 120px;
     background-color: $very-dark-grayish-blue;
     color: $grayish-blue;
     text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
+    border-radius: .625rem;
+    padding: 16px 35px;
+    margin-bottom: 18px;
 
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
     bottom: 100%;
+    right: .9375rem;
+    transform: translate(50%, 0);
+}
+
+.tooltip-content::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
     left: 50%;
-    margin-left: -60px;
+    margin-left: -12px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: $very-dark-grayish-blue transparent transparent transparent;
+}
+
+.social-media-links img {
+    vertical-align: middle;
+    padding-top: 3px;
+}
+
+.shareBtn-text {
+    letter-spacing: 5px;
+}
+
+.icon-facebook {
+    padding-left: 15px;
+}
+
+.icon-twitter {
+    padding: 0 15px;
 }
