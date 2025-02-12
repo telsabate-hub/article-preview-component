@@ -11,7 +11,7 @@ body {
   color: hwb(217 28% 58%);
   font-size: 0.8125rem;
   background-color: hsl(210, 46%, 95%);
-  padding: 15.625rem 0;
+  padding: 16.25rem 0 12.5rem;
 }
 
 article {
@@ -92,7 +92,6 @@ article {
 }
 
 .tooltip-content {
-  visibility: hidden;
   background-color: hwb(217 28% 58%);
   color: hsl(212, 23%, 69%);
   text-align: center;
@@ -133,4 +132,21 @@ article {
 
 .icon-twitter {
   padding: 0 15px;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    padding: 0 1.5rem;
+  }
+  article {
+    flex-direction: column;
+  }
+  .article-img {
+    width: 330px;
+    height: 300px;
+  }
+  .article-details-title {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }

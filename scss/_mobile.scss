@@ -1,0 +1,19 @@
+@media screen and (max-width: 767px){
+    body {
+        padding: 0 1.5rem;
+    }
+
+    article {
+        flex-direction: column;
+    }
+
+    .article-img {
+        width: 330px;
+        height: 300px;
+    }
+
+    .article-details-title {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}

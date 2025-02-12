@@ -4,7 +4,7 @@ body {
     @include fontStyle(.8125rem, 500);
 
     background-color: $light-grayish-blue;
-    padding: 15.625rem 0;
+    padding: 16.25rem 0 12.5rem;
 }
 
 article {
@@ -87,7 +87,6 @@ article {
 }
 
 .tooltip-content {
-    visibility: hidden;
     background-color: $very-dark-grayish-blue;
     color: $grayish-blue;
     text-align: center;
@@ -130,3 +129,6 @@ article {
 .icon-twitter {
     padding: 0 15px;
 }
+
+
+@import './mobile';
