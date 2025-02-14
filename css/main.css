@@ -134,19 +134,28 @@ article {
   padding: 0 15px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   body {
     padding: 0 1.5rem;
   }
   article {
     flex-direction: column;
+    margin-top: 4.375rem;
   }
   .article-img {
-    width: 330px;
-    height: 300px;
+    width: 100%;
+    height: 30vh;
+    border-radius: 0.5rem 0.5rem 0 0;
+    background-position-y: -0.9375rem;
+  }
+  .article-details {
+    padding-bottom: 1.25rem;
   }
   .article-details-title {
     font-size: 16px;
     line-height: 1.5;
+  }
+  .content-preview {
+    padding: 1rem 0 1.5rem;
   }
 }
