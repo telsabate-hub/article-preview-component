@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px){
+@media screen and (max-width: 820px){
     body {
         padding: 0 1.5rem;
     }
@@ -26,5 +26,12 @@
 
     .content-preview {
         padding: 1rem 0 1.5rem;
+    }
+}
+
+@media screen and (max-width: 344px){
+    .article-img {
+        background-position-y: 0;
+        height: 22vh;
     }
 }
