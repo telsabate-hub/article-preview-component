@@ -65,7 +65,7 @@ article {
     color: $grayish-blue;
 }
 
-#shareBtn {
+.shareBtn {
     border: none;
     position: absolute;
     top: .75rem;
@@ -76,13 +76,13 @@ article {
     height: 1.875rem;
 }
 
-#shareBtn:hover,
-#shareBtn:focus {
+.shareBtn:hover,
+.shareBtn:focus {
     background-color: $desaturated-dark-blue;
 }
 
-#shareBtn:hover > img, 
-#shareBtn:focus > img {
+.shareBtn:hover > img, 
+.shareBtn:focus > img {
     filter: brightness(0) invert(1);
 }
 
@@ -115,7 +115,8 @@ article {
 
 .social-media-links img {
     vertical-align: middle;
-    padding-top: 3px;
+    // padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 .shareBtn-text {
@@ -128,6 +129,21 @@ article {
 
 .icon-twitter {
     padding: 0 15px;
+}
+
+.mobile-share-links {
+    // display: flex;
+    display: none;
+    background-color: $very-dark-grayish-blue;
+    color: $grayish-blue;
+    text-align: center;
+    border-radius: 0 0 .5rem .5rem;
+    padding: 18px 35px;
+    position: relative;
+}
+
+#btn2 {
+    margin-right: 35px;
 }
 
 
