@@ -17,6 +17,7 @@
 
     .article-details {
         padding-bottom: 1.25rem;
+        padding-top: 38px;
 
         &-title {
             font-size: 16px;
@@ -24,8 +25,12 @@
         }
     }
 
+    .article-details.share-links-visible {
+        padding-bottom: 0;
+    }
+
     .content-preview {
-        padding: 1rem 0 1.5rem;
+        padding: 15px 0 15px;
     }
 }
 
