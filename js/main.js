@@ -4,13 +4,14 @@ const shareLinksDiv = document.querySelector( ".mobile-share-links" );
 const authorDiv = document.querySelector( ".author" );
 const articleDetails = document.querySelector( ".article-details" );
 
-button.addEventListener( "click", function(){
+button.addEventListener( "click", function(e){
     const isMobile = ( window.screen.width <= 820 );
 
     if( isMobile ){
-        shareLinksDiv.style.display = "block";
+        shareLinksDiv.style.display = "flex";
         authorDiv.style.display = "none";
         articleDetails.classList.toggle( "share-links-visible" );
+        e.target.focus();
     } else {
         tooltip.removeAttribute( "hidden" );
         articleDetails.classList.toggle( "share-links-visible" );

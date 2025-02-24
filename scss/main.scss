@@ -77,12 +77,14 @@ article {
 }
 
 .shareBtn:hover,
-.shareBtn:focus {
+.shareBtn:focus,
+#btn2 {
     background-color: $desaturated-dark-blue;
 }
 
 .shareBtn:hover > img, 
-.shareBtn:focus > img {
+.shareBtn:focus > img,
+#btn2 > img {
     filter: brightness(0) invert(1);
 }
 
@@ -143,6 +145,7 @@ article {
 
 #btn2 {
     margin-right: 35px;
+    top: 1.0625rem;
 }
 
 
